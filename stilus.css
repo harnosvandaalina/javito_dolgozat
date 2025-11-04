@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  color: slategrey;
+}
+#tarolo {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+.fejlec {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: darkslategrey;
+  margin-bottom: 0;
+}
+.menu ul {
+  list-style-type: none;
+  background-color: darkcyan;
+  padding: 10px;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+a:hover {
+    color: rgb(22, 14, 14); 
+    background-color: aqua;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+.tartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{
+    text-align: center;
+    background-color: lightsteelblue;
+    margin: 10px;
+}
+img{
+    width: 100%;
+}
+.kepesszoveg{
+    background-color: white;
+    column-gap: 10px;
+    margin: 10px;
+    text-align: justify;
+    padding: 10px;
+    
+}
+
+/*tablet*/
+@media screen and (max-width: 750px) {
+  .tartalom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .menu ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*telefon*/
+@media screen and (max-width: 500px) {
+  .tartalom {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .menu ul {
+    grid-template-columns: 1fr;
+  }
+}
